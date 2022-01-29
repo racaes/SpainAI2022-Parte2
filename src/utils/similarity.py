@@ -5,6 +5,7 @@ import bokeh
 import bokeh.models
 import bokeh.plotting
 
+
 def _filter_threshold(x, threshold=0):
     return ((x > threshold) & (x < 1)).any()
 
@@ -35,6 +36,7 @@ def similarity_filter(embeddings_1, embeddings_2, labels_1, labels_2, threshold=
     )
 
     return df, labels_1, labels_2
+
 
 def visualize_similarity(
     embeddings_1,
